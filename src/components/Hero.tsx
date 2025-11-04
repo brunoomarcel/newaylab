@@ -37,7 +37,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0d1117] pt-24">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0d1117] pt-0 md:pt-24">
       {/* Gradiente Interativo - Segue o mouse */}
       <div
         className="absolute inset-0 opacity-30 transition-all duration-300 ease-out"
@@ -69,8 +69,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg sm:text-xl text-gray-400 mb-14 max-w-3xl font-normal leading-relaxed" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 400 }}>
-            Reduzimos custos operacionais, aumentamos produtividade e trazemos previsibilidade através de IA e automações inteligentes.
-            Implementação completa de sistemas personalizados para seu negócio.
+            Reduzimos custos operacionais e trazemos previsibilidade com a implementação de sistemas personalizados para seu negócio.
           </p>
 
           {/* Buttons */}

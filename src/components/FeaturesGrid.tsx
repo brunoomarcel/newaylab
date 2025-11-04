@@ -25,26 +25,26 @@ const FeaturesGrid = () => {
 
   const features = [
     {
-      title: 'IA Conversacional',
+      title: 'Atendimento Automático',
       description: 'Chatbots inteligentes que entendem contexto e respondem como humanos.',
-      stat: 'GPT-4',
+      stat: 'IA Avançada',
       gradient: 'from-blue-100 to-cyan-100',
       textGradient: 'from-blue-600 to-cyan-600',
     },
     {
-      title: 'Automação Total',
+      title: 'Empresa Funcionando Sempre',
       description: 'Processos repetitivos rodando sem intervenção humana.',
       stat: '24/7',
       gradient: 'from-purple-100 to-pink-100',
       textGradient: 'from-purple-600 to-pink-600',
     },
-    {
-      title: 'Análise Preditiva',
-      description: 'IA prevê tendências e gera insights estratégicos.',
-      stat: 'Real-time',
-      gradient: 'from-orange-100 to-red-100',
-      textGradient: 'from-orange-600 to-red-600',
-    },
+    // {
+    //   title: 'Análise Preditiva',
+    //   description: 'IA prevê tendências e gera insights estratégicos.',
+    //   stat: 'Real-time',
+    //   gradient: 'from-orange-100 to-red-100',
+    //   textGradient: 'from-orange-600 to-red-600',
+    // },
     {
       title: 'Integração Multi-plataforma',
       description: 'Conecte todos os sistemas.',
@@ -53,15 +53,15 @@ const FeaturesGrid = () => {
       textGradient: 'from-green-600 to-emerald-600',
     },
     {
-      title: 'Scraping Inteligente',
-      description: 'Coleta automatizada de dados.',
+      title: 'Scrapping de Dados',
+      description: 'Coleta automatizada de dados de concorrência e busca de leads de forma automática.',
       stat: 'Auto',
       gradient: 'from-indigo-100 to-blue-100',
       textGradient: 'from-indigo-600 to-blue-600',
     },
     {
       title: 'Suporte Técnico',
-      description: 'Equipe especializada disponível.',
+      description: 'Equipe especializada disponível para atender.',
       stat: 'Incluso',
       gradient: 'from-teal-100 to-cyan-100',
       textGradient: 'from-teal-600 to-cyan-600',
@@ -73,6 +73,12 @@ const FeaturesGrid = () => {
       ref={sectionRef}
       className="relative py-32 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden"
     >
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-1/4 left-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-purple-100 rounded-full blur-3xl"></div>
+      </div>
+
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/4 left-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl"></div>

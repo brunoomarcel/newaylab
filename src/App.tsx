@@ -31,7 +31,7 @@ function App() {
       <Header />
       <Hero />
       <UseCase />
-      <FeaturesGrid />
+      {/* <FeaturesGrid /> */}
       <WhyChooseUs />
       <Stats />
       <HowItWorks />

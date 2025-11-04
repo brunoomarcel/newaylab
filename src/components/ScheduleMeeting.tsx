@@ -57,7 +57,7 @@ const ScheduleMeeting = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto" style={{ fontFamily: 'Inter, sans-serif' }}>
-            Descubra como IA e Automação podem reduzir custos e aumentar a eficiência do seu negócio
+            Nossa equipe irá avaliar seu negócio e te ajudar a escalar com Automação e IA
           </p>
         </div>
 

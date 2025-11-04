@@ -31,7 +31,7 @@ const HowItWorks = () => {
     {
       number: '02',
       title: 'Estratégia',
-      description: 'Criamos um plano personalizado de implementação com ROI projetado',
+      description: 'Criamos um plano personalizado de implementação',
     },
     {
       number: '03',
@@ -69,7 +69,7 @@ const HowItWorks = () => {
               style={{ transitionDelay: `${index * 150}ms`, fontFamily: 'Inter, sans-serif' }}
             >
               {/* Number */}
-              <div className="text-6xl font-bold text-blue-600 mb-6 opacity-20">
+              <div className="text-6xl font-bold text-gray-400 mb-6">
                 {feature.number}
               </div>
 

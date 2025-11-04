@@ -29,13 +29,13 @@ const ComoNosAjudamos = () => {
       icon: Bot,
       title: 'Automação de Processos com IA',
       subtitle: 'Elimine tarefas repetitivas e multiplique produtividade',
-      description: 'Implementamos sistemas de IA que processam linguagem natural, executam decisões automáticas e aprendem com cada interação. Utilizamos GPT-4, Claude e Gemini para criar assistentes virtuais que atendem 24/7, qualificam leads, processam pedidos e geram relatórios inteligentes sem intervenção humana.',
-      technicalDetails: [
-        'NLP (Natural Language Processing) para compreensão contextual',
-        'Integração com APIs REST, GraphQL e Webhooks',
-        'Machine Learning para otimização contínua',
-        'RPA (Robotic Process Automation) para tarefas estruturadas'
-      ],
+      description: 'Implementamos sistemas de IA que processam linguagem natural, executam decisões automáticas e aprendem continuamente.',
+      // technicalDetails: [
+      //   'NLP (Natural Language Processing) para compreensão contextual',
+      //   'Integração com APIs REST, GraphQL e Webhooks',
+      //   'Machine Learning para otimização contínua',
+      //   'RPA (Robotic Process Automation) para tarefas estruturadas'
+      // ],
       resultado: 'Redução de 70-85% no tempo operacional',
       gradient: 'from-cyan-500 to-[#5539ff]'
     },
@@ -43,7 +43,7 @@ const ComoNosAjudamos = () => {
       icon: Database,
       title: 'Integração e Sincronização de Dados',
       subtitle: 'Conecte todos os seus sistemas em tempo real',
-      description: 'Criamos pipelines de dados robustos que sincronizam informações entre CRM, ERPs, plataformas de e-commerce, sistemas de pagamento e bancos de dados. Utilizamos n8n, Zapier e Make para orquestração, garantindo integridade transacional e atualização em tempo real.',
+      description: 'Criamos pipelines de dados robustos que sincronizam informações entre CRM, ERPs, plataformas de e-commerce, sistemas de pagamento e bancos de dados.',
       technicalDetails: [
         'Orquestração via n8n, Zapier e Make.com',
         'APIs customizadas com autenticação OAuth 2.0',
@@ -57,7 +57,7 @@ const ComoNosAjudamos = () => {
       icon: TrendingUp,
       title: 'Análise Preditiva e Inteligência de Negócios',
       subtitle: 'Transforme dados em decisões estratégicas',
-      description: 'Desenvolvemos dashboards alimentados por IA que analisam padrões históricos, preveem demandas, identificam oportunidades de vendas e geram insights acionáveis. Utilizamos processamento de big data, algoritmos de ML para previsão de séries temporais e análise comportamental do cliente.',
+      description: 'Desenvolvemos dashboards de ponta com relatórios de históricos, preveem demandas, identificam oportunidades de vendas e geram insights para tomadas de decisão.',
       technicalDetails: [
         'Algoritmos de Machine Learning para previsão',
         'Processamento de big data em tempo real',
@@ -95,8 +95,7 @@ const ComoNosAjudamos = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-4xl mx-auto" style={{ fontFamily: 'Inter, sans-serif' }}>
-            Transformamos seu negócio através de automações inteligentes e IA avançada. Cada solução é desenvolvida 
-            com arquitetura escalável e tecnologias de ponta.
+            Transformamos seu negócio através de automações inteligentes e IA avançada.
           </p>
         </div>
 
@@ -135,14 +134,14 @@ const ComoNosAjudamos = () => {
 
                 {/* Technical Details */}
                 <div className="mb-6 space-y-2">
-                  {beneficio.technicalDetails.map((detail, detailIndex) => (
+                  {/* {beneficio.technicalDetails.map((detail, detailIndex) => (
                     <div key={detailIndex} className="flex items-start gap-3">
                       <Cpu className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-1" />
                       <span className="text-sm text-gray-400" style={{ fontFamily: 'Inter, sans-serif' }}>
                         {detail}
                       </span>
                     </div>
-                  ))}
+                  ))} */}
                 </div>
 
                 {/* Result Badge */}

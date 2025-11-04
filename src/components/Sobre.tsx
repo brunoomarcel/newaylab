@@ -28,12 +28,12 @@ const Sobre = () => {
     {
       icon: Target,
       title: 'Foco em Vendas',
-      description: 'Automações de IA projetadas para aumentar conversões, qualificar leads e fechar mais negócios. Cada solução é pensada para gerar resultados diretos em vendas.'
+      description: 'Automações de IA projetadas para aumentar conversões, qualificar leads e fechar mais negócios.'
     },
     {
       icon: MessageSquare,
       title: 'Atendimento Inteligente',
-      description: 'Chatbots e assistentes virtuais que atendem 24/7, qualificam leads automaticamente e direcionam para vendas. Nunca perca uma oportunidade.'
+      description: 'Agentes de IA que atendem 24/7, qualificam leads automaticamente e direcionam para vendas sem perder nenhuma oportunidade.'
     },
     {
       icon: TrendingUp,
@@ -45,12 +45,12 @@ const Sobre = () => {
   return (
     <section
       id="sobre"
-      className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden"
+      className="py-24 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden"
     >
       {/* Background decoration */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-100 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-purple-100 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -58,18 +58,17 @@ const Sobre = () => {
         <div className={`text-center mb-16 transition-all duration-700 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
-          {/* <span className="text-sm font-semibold text-cyan-400 uppercase tracking-wider" style={{ fontFamily: 'Inter, sans-serif' }}>
+          {/* <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider" style={{ fontFamily: 'Inter, sans-serif' }}>
             Sobre Nós 
           </span>*/}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mt-4 mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mt-4 mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
             Especialistas em{' '}
-            <span className="bg-gradient-to-r from-cyan-400 to-[#5539ff] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-500 to-[#5539ff] bg-clip-text text-transparent">
               Automações com IA
             </span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto" style={{ fontFamily: 'Inter, sans-serif' }}>
-            Somos especialistas em automações com IA focados em vendas. Criamos soluções inteligentes que convertem mais, 
-            qualificam leads automaticamente e aumentam suas receitas.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto" style={{ fontFamily: 'Inter, sans-serif' }}>
+            Criamos soluções inteligentes que convertem mais, qualificam leads automaticamente e aumentam suas receitas.
           </p>
         </div>
 
@@ -82,15 +81,15 @@ const Sobre = () => {
             return (
               <div
                 key={index}
-                className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:transform hover:scale-105"
+                className="bg-white rounded-xl p-8 border-2 border-gray-200 hover:border-gray-400 hover:shadow-lg transition-all duration-300 hover:transform hover:scale-105"
               >
-                <div className="w-16 h-16 bg-slate-700/50 border border-slate-600/50 rounded-xl flex items-center justify-center mb-6">
-                  <IconComponent className="w-8 h-8 text-gray-300" />
+                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-[#5539ff] rounded-xl flex items-center justify-center mb-6">
+                  <IconComponent className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-semibold text-white mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
                   {card.title}
                 </h3>
-                <p className="text-gray-400 leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
+                <p className="text-gray-600 leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
                   {card.description}
                 </p>
               </div>
