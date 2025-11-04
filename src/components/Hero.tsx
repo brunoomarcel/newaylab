@@ -63,12 +63,12 @@ const Hero = () => {
         {/* Hero Content */}
         <div>
           {/* Main Heading */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight tracking-tight max-w-5xl" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 700 }}>
+          <h1 className="text-[2.7rem] sm:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight tracking-tight max-w-5xl text-center" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 700 }}>
             Escale suas vendas com Automações & Inteligência Artificial
           </h1>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl text-gray-400 mb-14 max-w-3xl font-normal leading-relaxed" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 400 }}>
+          <p className="text-lg sm:text-xl text-gray-400 mb-14 max-w-3xl font-normal leading-relaxed text-center" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 400 }}>
             Reduzimos custos operacionais e trazemos previsibilidade com a implementação de sistemas personalizados para seu negócio.
           </p>
 
