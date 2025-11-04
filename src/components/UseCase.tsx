@@ -57,7 +57,7 @@ const UseCases = () => {
   ];
 
   return (
-    <section id="solucoes-ia-automacao" className="relative pt-32 pb-0 md:pb-32 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+    <section id="solucoes-ia-automacao" className="relative pt-32 pb-16 md:pb-32 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-20">
@@ -80,14 +80,17 @@ const UseCases = () => {
               <div
                 key={index}
                 data-index={index}
-                className={`use-case-card group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-gray-400 hover:shadow-lg transition-all duration-500 ${
+                className={`use-case-card card-shine group relative bg-white rounded-2xl p-8 border-2 border-gray-200 md:border hover:border-gray-400 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 ${
                   visibleCases.includes(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
-                style={{ transitionDelay: `${index * 100}ms` }}
+                style={{ 
+                  transitionDelay: `${index * 100}ms`,
+                  transformStyle: 'preserve-3d'
+                }}
               >
                 {/* Icon */}
-                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-[#5539ff] rounded-xl flex items-center justify-center mb-6">
-                  <IconComponent className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-[#5539ff] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                  <IconComponent className="w-8 h-8 text-white group-hover:scale-110 transition-transform duration-300" />
                 </div>
 
                 {/* Content */}

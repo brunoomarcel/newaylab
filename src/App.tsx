@@ -15,6 +15,8 @@ import Demonstracao from './components/Demonstracao';
 import Sobre from './components/Sobre';
 import ComoNosAjudamos from './components/ComoNosAjudamos';
 import Footer from './components/Footer';
+import ScrollProgress from './components/ScrollProgress';
+import ScrollToTop from './components/ScrollToTop';
 // import SmartBackgroundMusic from './components/BackgroundMusic';
 // import CookieConsent from './components/CookieConsent';
 
@@ -24,10 +26,14 @@ function App() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+
+    // Adicionar smooth scroll
+    document.documentElement.style.scrollBehavior = 'smooth';
   }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <ScrollProgress />
       <Header />
       <Hero />
       <UseCase />
@@ -43,6 +49,7 @@ function App() {
       <Security />
       <FinalCTA />
       <Footer />
+      <ScrollToTop />
       {/*<ChatWidget />*/}
       {/* <SmartBackgroundMusic /> */}
       {/* <CookieConsent /> */}

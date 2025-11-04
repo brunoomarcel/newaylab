@@ -1,34 +1,42 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { ArrowUp } from 'lucide-react';
 
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Scroll para o topo sempre que a rota mudar
-    // Usando tanto scrollTo quanto scroll para garantir compatibilidade
-    window.scrollTo(0, 0);
-    window.scroll(0, 0);
-    
-    // Também usando o método smooth como fallback
-    setTimeout(() => {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
-    }, 50);
-    
-    // Para dispositivos móveis, também resetar o scroll do body
-    if (document.body) {
-      document.body.scrollTop = 0;
-    }
-    if (document.documentElement) {
-      document.documentElement.scrollTop = 0;
-    }
-  }, [pathname]);
+    const toggleVisibility = () => {
+      if (window.scrollY > 500) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
 
-  return null;
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  return (
+    <>
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 p-4 bg-gradient-to-r from-cyan-500 to-[#5539ff] text-white rounded-full shadow-2xl hover:shadow-cyan-500/50 hover:scale-110 transition-all duration-300 group"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp className="w-6 h-6 group-hover:-translate-y-1 transition-transform duration-300" />
+        </button>
+      )}
+    </>
+  );
 };
 
 export default ScrollToTop;
