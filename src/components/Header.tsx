@@ -138,7 +138,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-800/50">
+          <div className="md:hidden mt-4 pb-4 border-t border-gray-800/50 bg-[#0d1117]/95 backdrop-blur-md rounded-lg p-4 -mx-6">
             <div className="flex flex-col gap-4 pt-4">
               <a
                 href="#"
@@ -224,7 +224,7 @@ const Header = () => {
                 variant="primary"
                 className="!px-4 !py-2 !text-sm text-center w-full"
               >
-                Começar
+                Agendar Reunião
               </AnimatedButton>
             </div>
           </div>
