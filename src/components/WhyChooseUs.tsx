@@ -142,9 +142,9 @@ const WhyChooseUs = () => {
         <div className={`text-center mt-16 transition-all duration-700 delay-700 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
-          <p className="text-lg text-slate-300 mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
+          {/* <p className="text-lg text-slate-300 mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
             Descubra como a IA pode transformar seu negócio
-          </p>
+          </p> */}
           <button
             onClick={() => {
               const element = document.querySelector('#schedule-meeting');

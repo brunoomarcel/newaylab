@@ -116,9 +116,6 @@ const Stats = () => {
         <div className={`mt-16 text-center transition-all duration-700 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`} style={{ transitionDelay: '600ms' }}>
-          <p className="text-gray-400 text-lg mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
-            Descubra qual será o impacto da IA no seu negócio
-          </p>
           <button
             onClick={() => {
               const element = document.querySelector('#schedule-meeting');

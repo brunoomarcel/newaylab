@@ -74,7 +74,7 @@ const Demonstracao = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-4xl mx-auto" style={{ fontFamily: 'Inter, sans-serif' }}>
-            Um sistema completo de IA para restaurantes. Veja como funciona na prática um sistema completo de IA para uma empresa.
+            Um sistema de IA completo para restaurantes.
           </p>
         </div>
 
@@ -124,7 +124,7 @@ const Demonstracao = () => {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
           <p className="text-gray-400 mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
-            Quer escalar suas vendas com Automações e IA? Agende uma consultoria gratuita e faça uma avaliação do seu negócio.
+            Agende uma consultoria gratuita e faça uma avaliação do seu negócio.
           </p>
           <a
             href="#schedule-meeting"

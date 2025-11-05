@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Zap, Clock, Bot, TrendingDown, Rocket, Headphones } from 'lucide-react';
 import AnimatedButton from './AnimatedButton';
-import { useParallax } from '../hooks/useScrollAnimation';
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
-  const parallaxY = useParallax(0.3);
 
   // Função para abrir WhatsApp
   const openWhatsApp = () => {
@@ -63,7 +61,6 @@ const Hero = () => {
         className={`relative z-10 w-full max-w-7xl mx-auto px-6 py-24 transition-all duration-700 ${
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
-        style={{ transform: `translateY(${parallaxY}px)` }}
       >
         {/* Hero Content */}
         <div>
