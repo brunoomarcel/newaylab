@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
 import UseCase from './components/UseCase';
-import FeaturesGrid from './components/FeaturesGrid';
 import Stats from './components/Stats';
 // import Testimonials from './components/Testimonials';
 import Security from './components/Security';
